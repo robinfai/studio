@@ -1,7 +1,7 @@
 import 'package:flex_tabs/flex_tabs.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:macos_ui/macos_ui.dart';
+import 'package:fluent_ui/fluent_ui.dart';
 import 'package:terminal_studio/src/core/state/database.dart';
 import 'package:terminal_studio/src/ui/tabs/playground.dart';
 import 'package:xterm/xterm.dart';
@@ -40,18 +40,15 @@ class _DevToolsTabViewState extends ConsumerState<DevToolsTabView> {
             Wrap(
               spacing: 8,
               children: [
-                PushButton(
-                  buttonSize: ButtonSize.large,
+                Button(
                   onPressed: _openAddHostTab,
                   child: const Text('Add SSH host'),
                 ),
-                PushButton(
-                  buttonSize: ButtonSize.large,
+                Button(
                   onPressed: _clearHosts,
                   child: const Text('Clear SSH hosts'),
                 ),
-                PushButton(
-                  buttonSize: ButtonSize.large,
+                Button(
                   onPressed: () => tab.replace(PlaygroundTab()),
                   child: const Text('Playground'),
                 ),

@@ -20,8 +20,8 @@ class _PlaygroundViewState extends State<PlaygroundView> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: const [
+    return const Stack(
+      children: [
         SizedBox(
           width: 300,
           height: 300,

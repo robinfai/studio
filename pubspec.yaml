@@ -36,9 +36,9 @@ dependencies:
 
   dartssh2: ^2.7.2+3
 
-  # xterm: ^3.2.7
-  xterm:
-    git: https://github.com/TerminalStudio/xterm.dart.git
+  xterm: ^4.0.0
+#  xterm:
+#    git: https://github.com/TerminalStudio/xterm.dart.git
 
   flutter_riverpod: ^2.0.0
 
@@ -60,7 +60,7 @@ dependencies:
 
   uuid: ^3.0.6
 
-  macos_ui: ^1.7.5
+  macos_ui: ^1.12.2
 
   syncfusion_flutter_datagrid: ^20.3.47
 
@@ -70,7 +70,7 @@ dependencies:
 
   flutter_highlight: ^0.7.0
 
-  fluent_ui: ^4.0.1
+  fluent_ui: ^4.8.7
 
   font_awesome_flutter: ^10.2.1
 

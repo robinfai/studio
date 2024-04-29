@@ -141,10 +141,15 @@ class TerminalContextMenuState extends ConsumerState<TerminalContextMenu>
 
   Future<void> _handleSelectAll() async {
     terminalController.setSelection(
-      BufferRangeLine(
-        CellOffset(0, terminal.buffer.height - terminal.viewHeight),
-        CellOffset(terminal.viewWidth, terminal.buffer.height - 1),
+      terminal.buffer.createAnchor(
+        0,
+        terminal.buffer.height - terminal.viewHeight,
       ),
+      terminal.buffer.createAnchor(
+        terminal.viewWidth,
+        terminal.buffer.height - 1,
+      ),
+      mode: SelectionMode.line,
     );
   }
 
